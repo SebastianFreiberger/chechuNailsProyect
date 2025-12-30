@@ -1,0 +1,24 @@
+/* ============================================
+   CHECHUÑAS - Estilos Principales
+   Este archivo importa todos los módulos CSS
+   ============================================ */
+
+/* Importar módulos CSS (si prefieres usar un solo archivo) */
+/* Los estilos están organizados en:
+   - css/variables.css  → Variables CSS (colores, espaciado, etc.)
+   - css/base.css       → Estilos base y utilidades
+   - css/components.css → Componentes (header, cards, etc.)
+   - css/responsive.css → Media queries responsive
+*/
+
+/* 
+   NOTA: Este archivo se mantiene como respaldo.
+   El index.html ahora carga los archivos CSS modulares directamente
+   para mejor organización y mantenimiento del código.
+   
+   Si prefieres un solo archivo, puedes descomentar los @import:
+   @import url('css/variables.css');
+   @import url('css/base.css');
+   @import url('css/components.css');
+   @import url('css/responsive.css');
+*/

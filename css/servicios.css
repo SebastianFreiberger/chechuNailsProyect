@@ -1,0 +1,721 @@
+/* ============================================
+   ESTILOS PÁGINAS DE SERVICIOS - ChechUñas
+   ============================================ */
+
+/* ========== HERO DEL SERVICIO ========== */
+.service-hero {
+    padding-top: 120px;
+    padding-bottom: var(--space-12);
+    background: var(--bg-gradient);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.service-hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+}
+
+.service-hero-content {
+    animation: fadeInUp 0.6s ease;
+}
+
+.service-badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--space-4);
+}
+
+.service-hero-content h1 {
+    font-size: var(--text-5xl);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-4);
+}
+
+.service-hero-content > p {
+    font-size: var(--text-lg);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-6);
+    line-height: 1.8;
+}
+
+.service-price-box {
+    background: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.price-label {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-amount {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    margin: var(--space-2) 0;
+}
+
+.price-duration {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+}
+
+.service-hero-image {
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.service-hero-image img {
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* ========== DESCRIPCIÓN DEL SERVICIO ========== */
+.service-description {
+    padding: var(--space-16) 0;
+    background: var(--color-white);
+}
+
+.service-description h2 {
+    text-align: center;
+    margin-bottom: var(--space-4);
+    color: var(--color-gray-800);
+}
+
+.service-description > .container > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-10);
+    color: var(--color-gray-600);
+}
+
+.service-includes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.include-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--bg-gradient);
+    border-radius: var(--radius-lg);
+}
+
+.include-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-sm);
+    flex-shrink: 0;
+}
+
+/* ========== PROCESO ========== */
+.service-process {
+    padding: var(--space-16) 0;
+    background: var(--bg-gradient);
+}
+
+.service-process h2 {
+    text-align: center;
+    margin-bottom: var(--space-2);
+}
+
+.service-process .section-subtitle {
+    text-align: center;
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-12);
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-steps::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-primary-light);
+}
+
+.process-step {
+    display: flex;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    position: relative;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.step-content {
+    background: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-800);
+}
+
+.step-content p {
+    margin: 0;
+    color: var(--color-gray-600);
+}
+
+/* ========== GALERÍA DEL SERVICIO ========== */
+.service-gallery {
+    padding: var(--space-16) 0;
+    background: var(--color-white);
+}
+
+.service-gallery h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.service-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+}
+
+.service-gallery .gallery-item {
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.service-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.service-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ========== BENEFICIOS ========== */
+.service-benefits {
+    padding: var(--space-16) 0;
+    background: var(--bg-gradient);
+}
+
+.service-benefits h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+.benefit-card {
+    background: var(--color-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+}
+
+.benefit-card h3 {
+    margin-bottom: var(--space-3);
+    color: var(--color-gray-800);
+}
+
+.benefit-card p {
+    margin: 0;
+    color: var(--color-gray-600);
+}
+
+/* ========== TIPOS DE SERVICIO ========== */
+.service-types {
+    padding: var(--space-16) 0;
+    background: var(--color-white);
+}
+
+.service-types h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+.type-card {
+    background: var(--bg-gradient);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all var(--transition-base);
+}
+
+.type-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.type-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+}
+
+.type-card h3 {
+    margin-bottom: var(--space-3);
+    color: var(--color-gray-800);
+}
+
+.type-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-4);
+}
+
+.type-duration {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+
+/* ========== PRECIOS ========== */
+.service-pricing {
+    padding: var(--space-16) 0;
+    background: var(--color-white);
+}
+
+.service-pricing h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    text-align: center;
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.pricing-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+
+.pricing-card h3 {
+    margin-bottom: var(--space-4);
+    color: var(--color-gray-800);
+}
+
+.pricing-amount {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: var(--space-6);
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: var(--space-2) 0;
+    color: var(--color-gray-600);
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* ========== SERVICIOS ADICIONALES ========== */
+.additional-services {
+    margin-top: var(--space-12);
+    text-align: center;
+}
+
+.additional-services h3 {
+    margin-bottom: var(--space-6);
+    color: var(--color-gray-800);
+}
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.additional-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) var(--space-6);
+    background: var(--bg-gradient);
+    border-radius: var(--radius-lg);
+}
+
+.additional-item span:first-child {
+    color: var(--color-gray-700);
+}
+
+.additional-price {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* ========== CTA ========== */
+.service-cta {
+    padding: var(--space-16) 0;
+    background: var(--color-primary);
+    text-align: center;
+}
+
+.service-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.service-cta p {
+    color: var(--color-primary-light);
+    margin-bottom: var(--space-8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-cta .btn-secondary {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.service-cta .btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .service-hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .service-hero-content h1 {
+        font-size: var(--text-3xl);
+    }
+    
+    .service-hero-image {
+        order: -1;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .process-steps::before {
+        display: none;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin: 0 auto var(--space-4);
+    }
+    
+    .service-gallery .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-includes {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .occasions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========== COMBO ESPECIAL - ESTILOS ========== */
+
+/* Lista del combo */
+.combo-list {
+    list-style: none;
+    text-align: left;
+    margin-top: var(--space-4);
+}
+
+.combo-list li {
+    padding: var(--space-2) 0;
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+}
+
+/* Sección de ahorro */
+.service-savings {
+    padding: var(--space-12) 0;
+    background: var(--color-primary);
+}
+
+.savings-box {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-10);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+}
+
+.savings-box h2 {
+    margin-bottom: var(--space-6);
+    color: var(--color-gray-800);
+}
+
+.savings-comparison {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.savings-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-gray-100);
+    border-radius: var(--radius-md);
+}
+
+.savings-label {
+    color: var(--color-gray-700);
+}
+
+.savings-price {
+    font-weight: 600;
+    color: var(--color-gray-800);
+}
+
+.savings-price.strikethrough {
+    text-decoration: line-through;
+    color: var(--color-gray-500);
+}
+
+.savings-total {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    border-top: 2px dashed var(--color-gray-300);
+    margin-top: var(--space-2);
+}
+
+.savings-final {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-4);
+    background: var(--bg-gradient);
+    border-radius: var(--radius-md);
+}
+
+.savings-final .savings-label {
+    font-weight: 600;
+}
+
+.savings-price.highlight {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.savings-badge {
+    display: inline-block;
+    margin-top: var(--space-4);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-2) var(--space-6);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--text-lg);
+}
+
+/* Ocasiones especiales */
+.service-occasions {
+    padding: var(--space-12) 0;
+    background: var(--color-white);
+}
+
+.service-occasions h2 {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.occasions-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.occasion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: var(--bg-gradient);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-base);
+}
+
+.occasion-item:hover {
+    transform: translateY(-5px);
+}
+
+.occasion-icon {
+    font-size: 2rem;
+}
+
+.occasion-item span:last-child {
+    font-size: var(--text-sm);
+    color: var(--color-gray-700);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .occasions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
